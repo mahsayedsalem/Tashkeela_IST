@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<div class="container">
+  <bdo dir="rtl"><h1 class="page-header">أضف النص الذي ترغب في تشكيله</h1></bdo>
+  <bdo dir="rtl"><form method="POST" action="{{ url_for('add_tashkeela') }}">
+    <bdo dir="rtl"><div class="form-group"><textarea name="inputText" size="80">{{inputText}}</textarea><br></div></bdo>
+    <bdo dir="rtl"><div class="form-group"><label for="male"></label>{{outputText}}</label><br></div></bdo>
+    <bdo dir="rtl"><button type="submit" class="btn btn-primary">شكل</button></bdo>
+</form></bdo>
+</div>
+{% endblock %}
